@@ -174,8 +174,8 @@ function addCard(element){
         `
         cardContainer.insertAdjacentHTML('beforeend', card);
 
-        const cardItem = document.querySelector(`.numberCard-${index}`);
-        cardItem.style.backgroundImage = `url(${arrSkills.backgroundImg[index]})`;
+        // const cardItem = document.querySelector(`.numberCard-${index}`);
+        // cardItem.style.backgroundImage = `url(${arrSkills.backgroundImg[index]})`;
     })
 
 
