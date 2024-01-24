@@ -53,6 +53,22 @@
   background-repeat: no-repeat;
 }
 
+.numberCard-0 {
+  background-image: url(../images/asp.jpg);
+}
+.numberCard-1 {
+  background-image: url(../images/js.jpg);
+}
+.numberCard-2 {
+  background-image: url(../images/docker.jpg);
+}
+.numberCard-3 {
+  background-image: url(../images/postgres.jpg);
+}
+.numberCard-4 {
+  background-image: url(../images/kafka.jpg);
+}
+
 .card-container [class ^= 'card'] .card-front {
   background-color: var(--bg-color);
   color: var(--btn-color);
