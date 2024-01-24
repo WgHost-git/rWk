@@ -1,0 +1,60 @@
+
+.loader-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    font-size: 0;
+}
+.loader-container  > div {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 25%;
+    height: 140px;
+    bottom: 70px;
+    z-index: 2;
+}
+
+.bouncybox {
+    height: 100px;
+    width: 40px;
+    margin-left: 20px;
+}
+.bouncybox .bouncy {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #ecf0f1;
+    -webkit-animation: bouncy 2s infinite ease-in-out;
+    animation: bouncy 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bouncy {
+    40% {
+        height: 40px;
+    }
+    50% {
+        transform: translate(0, 65px);
+        height: 34px;
+        border-radius: 20px;
+    }
+    65% {
+        height: 40px;
+    }
+}
+
+@keyframes bouncy {
+    40% {
+        height: 40px;
+    }
+    50% {
+        transform: translate(0, 65px);
+        height: 34px;
+        border-radius: 20px;
+    }
+    65% {
+        height: 40px;
+    }
+}

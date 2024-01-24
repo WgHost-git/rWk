@@ -1,0 +1,98 @@
+@font-face {
+  font-family: kamerik-3d;
+  src: url(../fonts/kamerik205-heavy.woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: marri-italic-3d;
+  src: url(../fonts/merriweather-regular-italic.woff2);
+}
+
+:root {
+  /* переменная растояния между ячейками */
+  --gutter: 20px;
+  --index: calc(1vw + 1vh);
+  --np: -16%;
+  --x: 0;
+  --y: 0;
+  --opacity: 0;
+  --btn-color: #bababa;
+  --bg-color: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.main {
+  height: 2600px;
+}
+
+.container {
+  height: fit-content;
+  background-color: var(--bg-color);
+  position: relative;
+  z-index: 2;
+  transform: translateY(0);
+  top: 100vh;
+  /*padding-top: 300px;*/
+  /*padding-bottom: 100px;*/
+  /* margin-top: 300px; */
+  display: flex;
+  flex-direction: column;
+  height: 2000px;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3%;
+  justify-content: space-between;
+  height: 300px;
+  padding-right: 3%;
+}
+
+.examples__container {
+  height: 605px;
+}
+
+.experience p {
+  position: absolute;
+  width: 700px;
+  right: 10px;
+  top: 258px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 10s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
